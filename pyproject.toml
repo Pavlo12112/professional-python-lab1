@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student-manager"
+version = "0.1.0"
+description = "Student management laboratory project"
+requires-python = ">=3.11"
+
+[project.scripts]
+student-manager = "student_manager.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
